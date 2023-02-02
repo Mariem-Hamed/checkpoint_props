@@ -1,7 +1,6 @@
 import "./App.css";
 import Profile from "./profile/profile";
-import Image from "./profile/image";
-
+import image from "./profile/me.png";
 function App() {
   const name = "Mariem Hamed";
   const bio =
@@ -19,10 +18,9 @@ function App() {
         aboutMe={bio}
         myProfession={profession}
         handleName={handleName}
-      />
-      <Image>
-        <img src="src/profile/me.png" alt="me" width={300}></img>
-      </Image>
+      >
+        <img src={image} alt="" />
+      </Profile>
     </div>
   );
 }

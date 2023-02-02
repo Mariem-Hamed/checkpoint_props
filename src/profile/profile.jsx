@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 const Profile = (props) => {
   return (
     <div>
+      {props.children}
       {/* inline style */}
       <h1 style={{ color: "#181D31" }}>My Name is {props.myName} </h1>
       <h3
